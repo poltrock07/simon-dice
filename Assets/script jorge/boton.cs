@@ -20,7 +20,7 @@ public class boton : MonoBehaviour
     {
         
     }
-    IEnumerator Empezar()
+  public  IEnumerator Empezar()
     {
         puedeJugar = false;
         yield return new WaitForSeconds(0.5f);
