@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Perder");
             perder();
+            return;
         }
         ++IndiceActualJugador;
         if(IndiceActualJugador == Juego.indiceActual)

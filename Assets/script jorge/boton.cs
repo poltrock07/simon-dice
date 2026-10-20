@@ -24,22 +24,23 @@ public class boton : MonoBehaviour
     }
   public  IEnumerator Empezar()
     {
-        
+        puedeJugar = false;
+        yield return new WaitForSeconds(0.5f);
+        for (int i = 0; i < botones.Length; i++)
+        {
+            botones[i].interactable = false;
+        }
         int aleatorio = (int)Random.Range(0, botones.Length);
         secuencia[indiceActual] = aleatorio;
         for (int i = 0; i <= indiceActual; i++)
         {
-            if (indiceActual == i)
-            {
+            
                 botones[secuencia[i]].interactable = (true);
                 yield return new WaitForSeconds(1);
                 botones[secuencia[i]].interactable = (false);
-            }
-            else
+            if(i!=indiceActual)
             {
-                botones[secuencia[i]].interactable = (true);
-                yield return new WaitForSeconds(1);
-                botones[secuencia[i]].interactable = (false);
+               
                 yield return new WaitForSeconds(1);
             }
         }
@@ -48,5 +49,6 @@ public class boton : MonoBehaviour
             botones[i].interactable = true;
         }
         indiceActual++;
+        puedeJugar = true;
     }
 }
