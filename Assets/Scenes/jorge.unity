@@ -365,6 +365,7 @@ MonoBehaviour:
   - {fileID: 2013377371}
   - {fileID: 489483059}
   - {fileID: 1427834975}
+  contador: []
   secuencia: 000000000000000000000000000000000000000000000000i
   indiceActual: 0
   puedeJugar: 0
