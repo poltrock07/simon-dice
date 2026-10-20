@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class jugador : MonoBehaviour
 {
-    //[Serializable] GameManager gameManager;
+    [SerializeField] GameManager gameManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,6 +17,6 @@ public class jugador : MonoBehaviour
     }
     public void PulsarBoton(int i)
     {
-        //gameManager.ComprobarSecuencia();
+        gameManager.ComprobarSecuencia(i);
     }
 }

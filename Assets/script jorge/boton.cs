@@ -5,9 +5,12 @@ using UnityEngine.UI;
 
 public class boton : MonoBehaviour
 {
+    [SerializeField] Button[] botones;
     [SerializeField] GameObject[] contador;
     [SerializeField] public int[] secuencia = { 0,0,0,0,0,0};
     [SerializeField] public int indiceActual = 0;
+    public bool puedeJugar;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

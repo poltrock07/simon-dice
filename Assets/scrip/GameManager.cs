@@ -1,7 +1,7 @@
 using JetBrains.Annotations;
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     [SerializeField] private int[] SecuenciaJugador;
     [SerializeField] int IndiceActualJugador;
